@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>followme_artoolkit</name>
+  <version>0.0.0</version>
+  <description>
+    followme_artoolkit is used to follow a moving goal identified by its ARToolkit tag
+  </description>
+  <maintainer email="arnaud.a.ramey@gmail.com">Arnaud Ramey</maintainer>
+  <license>BSD</license>
+  <buildtool_depend>catkin</buildtool_depend>
+  <depend>ar_pose</depend>
+  <depend>followme_laser</depend>
+  <export>
+    <cpp cflags="-I${prefix} -I${prefix}/build"
+         lflags="-lim -L${prefix}/lib -Wl,-rpath,${prefix}/lib" />
+  </export>
+</package>
