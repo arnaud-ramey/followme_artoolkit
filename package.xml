@@ -8,6 +8,11 @@
   <maintainer email="arnaud.a.ramey@gmail.com">Arnaud Ramey</maintainer>
   <license>BSD</license>
   <buildtool_depend>catkin</buildtool_depend>
+  <!-- Ubuntu packages dependencies:
+       get the keys using "rosdep db"  -->
+  <depend>libv4l-dev</depend>
+  <!-- third party sources:
+        these should be in the dependencies.rosinstall of the package -->
   <depend>ar_pose</depend>
   <depend>followme_laser</depend>
   <export>
